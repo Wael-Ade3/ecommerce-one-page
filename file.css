@@ -28,6 +28,9 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+img , button{
+    cursor: pointer;
+}
 nav .left :first-child{
     margin-right:15px;
 }
@@ -40,35 +43,33 @@ nav .right :nth-child(2) {
     margin-left:15px;
 }
 nav .left .nav-links {
-    display: none;
+    
     position: absolute;
     top: 0;
-    left: 0;
+    left: -60%;
     padding: 20px;
     width: 60%;
     height: 100vh;
     background-color: var(--White);
-    z-index: 7;
+    z-index: 9;
+    transition: .4s ;
 }
-nav .nav-links img {
+nav .left .nav-links img {
     margin-bottom: 40px;
 }
-nav .nav-links ul {
+nav .left .nav-links ul {
     list-style: none;
 }
-nav .nav-links ul li {
+nav .left .nav-links ul li {
     margin-bottom: 15px;
 }
-nav .nav-links ul li a {
+nav .left .nav-links ul li a {
     text-decoration: none;
-    color: var(--Grayishblue);
+    color: var(--Black);
     font-weight: 700;
-    padding-bottom: 43px;
+
 }
-nav .nav-links ul li a:hover {
-    color: var(--Darkgrayishblue);
-    border-bottom: 5px solid var(--Orange);
-}
+
 
 /* End Nav Style */
 
@@ -183,7 +184,7 @@ header .right .cart .right img {
 }
 
 .checkout .title h3 {
-padding: 30px
+    padding: 30px
 }
 .checkout .empty {
     display: none;
@@ -208,7 +209,7 @@ padding: 30px
 .checkout .product-cart .center :nth-child(1) {
     margin-bottom: 5px;
     color: var(--Darkgrayishblue);
-   
+    
 }
 .checkout .product-cart .center :nth-child(2) {
     color: var(--Darkgrayishblue);
@@ -271,6 +272,14 @@ padding: 30px
     }
     nav .left .nav-links ul li {
         margin: 0 20px;
+    }
+    nav .left .nav-links ul li a {
+        color: var(--Grayishblue);
+        padding-bottom: 43px;
+    }
+    nav .left .nav-links ul li a:hover {
+        color: var(--Darkgrayishblue);
+        border-bottom: 5px solid var(--Orange);
     }
     nav .left {
         display: flex;
