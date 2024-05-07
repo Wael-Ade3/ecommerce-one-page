@@ -85,7 +85,7 @@ header .left .main-photo :nth-child(1),header .left .main-photo :nth-child(2){
     border-radius: 50% ;
     background-color: var(--White);
 }
-header .left .main-photo .arrow:hover {
+header .left .main-photo .next:hover , header .left .main-photo .previous:hover {
     filter: invert(1%) sepia(4%) saturate(6307%) hue-rotate(-229deg) brightness(472%) contrast(94%);
     
 }
@@ -305,7 +305,7 @@ header .right .cart .right img {
         align-items: center;
         margin: 110px 170px; 
     }
-    header .arrow {
+    header .left .main-photo .next , header .left .main-photo .previous {
         display: none;
     }
     header .left  {
